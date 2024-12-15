@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#navigation1{
+    height: 80px;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    /* background-color: red; */
+    
+}  
+#nav-part2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 40px;
+    /* background-color: rgb(142, 117, 117); */
+    
+}   
+#nav-part2 h4{
+    font-size: 16px;
+    font-weight: 600;
+}  
+#nav-part2 h4 span{
+    color: rgb(71, 66, 66);
+    margin-left: 25px;
+}
+.gola1{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    
+}
+#navigation2 {
+    height: 70px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 100px;
+    /* background-color: red; */
+}
+#navigation2 h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#content{
+    height: calc(100% - 150px);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+#content-text{
+    height: 40%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+#content-text::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+#content-text::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(250, 0, 0); */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.elem h1{
+    font-size: 130px;
+    font-weight: 300;
+}
+#images{
+    height: 60%;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#images::-webkit-scrollbar{
+    display: none;
+}
+#images img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
